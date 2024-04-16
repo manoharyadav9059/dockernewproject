@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: manohar894/paytmmovies:latest
+    image: manohar894/paymovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: manohar894/paytmtrain:latest
+    image: manohar894/paytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: manohar894/paytmdth:latest
+    image: manohar894/paydth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: manohar894/paytmrecharge:latest
+    image: manohar894/payrecharge:latest
     ports:
       - "84:80"
     deploy:
