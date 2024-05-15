@@ -1,0 +1,16 @@
+---
+version: "3.8"
+services:
+  movies:
+    image: manohar894/movies:latest
+    port:
+      - 81:80
+    deploy:
+      replicas: 3
+  trains:
+    image: manohar894/trains:latest
+    port:
+      - 82:80
+    deploy:
+      replicas: 3
+
