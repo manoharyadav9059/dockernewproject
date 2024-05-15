@@ -4,12 +4,12 @@ services:
   movies:
     image: manohar894/movies:latest
     ports:
-      - 81:80
+      - 85:80
     deploy:
       replicas: 3
   trains:
     image: manohar894/trains:latest
     ports:
-      - 82:80
+      - 86:80
     deploy:
       replicas: 3
